@@ -6,7 +6,7 @@
     <title>Bootstrap Practice</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -53,40 +53,57 @@
     <header>
 
     <!-- carousel -->
-
-    <div id="carouselExample" class="carousel slide">
+    <div class="container-lg">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" p="5">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/w_html_logo_icon_170241.png" class="d-block w-100" alt="python" height="500" weight="700">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="https://i.pinimg.com/564x/b6/f5/b4/b6f5b4fd59507360c3753e7738068530.jpg" class="d-block w-100 h-90" alt="HTML 5">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>HTML5</h5>
+              <p>It is a markup language used for structuring and presenting content on the World Wide Web.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000" >
+            <img src="https://i.pinimg.com/564x/17/fa/12/17fa123af066c303b45d7c79afdf99e0.jpg" class="d-block w-100" alt="CSS">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>CSS(Cascading Style Sheet)</h5>
+              <p>It is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML.</p>
+            </div>
           </div>
           <div class="carousel-item">
-            <img src="https://amanihome.files.wordpress.com/2018/12/javascript-logo.png" class="d-block w-100" alt="javascript-logo" height="500" width="700">
-          </div>
-          <div class="carousel-item">
-            <img src="https://assets.stickpng.com/images/62b2220b038aad4d3ed7ca2f.png" class="d-block w-100" alt="CSS-Logo" height="500" width="700">
+            <img src="https://constructs.stampede-design.com/wp-content/uploads/2014/10/css3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-
+    </div>
 
     </header>
 
     <!-- Content Area -->
     <main>
-
-        <div class="row">
-        <div class="col-4">Navigation</div>
-        <div class="col-4">Content</div>
-        <div class="col-4">Ad Space here</div>
-        </div>
+      
+      <div class="row">
+        <div class="col-2">Navigation</div>
+        <div class="col-5">Content</div>
+        <div class="col-5">Ad Space here</div>
+      </div>
 
     </main>
     
